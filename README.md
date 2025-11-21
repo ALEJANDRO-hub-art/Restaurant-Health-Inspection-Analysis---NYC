@@ -1,111 +1,108 @@
-# NYC Restaurant Health Inspection Analysis 🍽️📊
+# NYC Restaurant Health Inspection Analysis -NYC 
 
-A comprehensive data analysis project examining restaurant health inspection results across New York City to identify patterns in violations, grades, and cuisine safety performance.
+A detailed analytical study of New York City restaurant health inspection data, focused on uncovering trends in violations, grading outcomes, and food safety performance across different cuisines.
 
-## 📋 Project Overview
+## Project Overview 
 
-This project analyzes NYC Department of Health restaurant inspection data to provide insights for improving public health policies, inspection scheduling, and food safety education. The analysis helps city leadership understand which types of restaurants struggle with food safety, which neighborhoods are at highest risk, and what violations are most common.
+This project examines restaurant inspection data from the NYC Department of Health to generate actionable insights for enhancing public health policies, optimizing inspection schedules, and guiding food safety education initiatives. The analysis enables city leaders to identify high-risk neighborhoods, understand which types of restaurants face the greatest food safety challenges, and pinpoint the most frequent violations.
 
-## 🎯 Business Problem
+## Business Problem 
 
-The NYC Department of Health needs data-driven insights to:
-- Identify patterns in restaurant violations and grades
-- Understand which cuisines and neighborhoods have the lowest food safety performance
-- Determine where to focus inspections, policies, or education to improve food safety
-- Track how restaurant grades and violations vary across boroughs and over time
+The NYC Department of Health requires data-driven insights to:
+- Detect trends in restaurant violations and inspection grades
+- Identify cuisines and neighborhoods with lower food safety compliance
+- Guide targeted inspections, policy decisions, and educational initiatives to enhance food safety
+- Monitor variations in restaurant grades and violations across boroughs and over time
 
-## 🛠️ Tech Stack
+## Tech Stack 
 
 - **SQL Server** - Data cleaning, transformation, and analysis
-- **Power BI** - Data visualization and interactive dashboards
-- **Git** - Version control
+- **Power BI** - Develop interactive dashboards and create insightful visualizations
 
-## 📁 Project Structure
+## Project Structure 
 
 ```
 ├── 01_data_preparation.sql          # Data cleaning and standardization
 ├── 02_overall_insights.sql          # Borough and grade distribution analysis
 ├── 03_violation_analysis.sql        # Violation patterns and critical violations
-├── 04_cuisine_analysis.sql          # Cuisine-specific safety performance
+├── 04_cuisine_analysis.sql          # Cuisine-specific safety compliance
 ├── Restaurant_Health_Inspection_Analysis_NYC.pbix  # Power BI dashboard
-└── README.md                        # Project documentation
 ```
 
-## 🔄 Data Preparation Process
+## Data Preparation Process 
 
 ### Data Cleaning Steps:
-1. **Missing Value Handling**
-   - Replaced NULL cuisine descriptions with 'Not Specified'
+1. **Missing Value** 
+   - Replaced NULL cuisine descriptions values with 'Not Specified'
    - Set missing grades to 'Inspection pending'
    - Standardized inspection types for pending inspections
    - Handled borough data inconsistencies
 
-2. **Data Standardization**
+2. **Data Standardization** 
    - Grouped similar cuisines into broader categories:
-     - Asian (Chinese, Japanese, Thai, Korean, etc.)
-     - American (Traditional American, BBQ, Hamburgers, etc.)
-     - European (Italian, French, Greek, etc.)
-     - Mediterranean/Middle Eastern
-     - Latin/Caribbean
+     - Asian (Chinese, Filipino, Indian , Indonesian, Pakistani, etc.)
+     - American (Californian, Barbecue, Hotdogs, etc.)
+     - European (English, Russian, Spanish, Czech, etc.)
+     - Mediterranean/Middle Eastern (Egyptian, Turkish, Moroccan, etc.)
+     - Latin/Caribbean (Mexican, Tex-Mex, Brazilian, etc.)
+     - Australian / Oceanic (Australian, Hawaiian, etc.)
      - And more...
 
-3. **Data Type Conversion**
-   - Converted inspection and grade dates to proper datetime format
+3. **Data Type Conversion** 
+   - Converted inspection and grade dates to DATETIME format
 
-## 📊 Key Analysis Areas
+## Key Analysis Areas
 
-### 1. Overall Insights
-- **Borough Analysis**: Total inspections by NYC borough
-- **Grade Distribution**: Distribution of A, B, C grades across the city
-- **Inspection Types**: Analysis of initial, re-inspection, and pre-permit inspections
+### 1. Overall Insights 
+- **Borough Analysis**: Inspections by NYC borough
+- **Grade Distribution across NYC**: A, B, C grades across the NYC
+- **Inspection Types**: Analysis of initial inspection, re-inspection, and pre-permit inspections
 
-### 2. Violation Analysis
-- **Top Violations**: Most frequent violation codes and descriptions
+### 2. Violation Analysis 
+- **Top Violations**: Top 10 violation codes and violation descriptions
 - **Critical vs Non-Critical**: Comparison of violation severity
-- **Geographic Patterns**: Boroughs with highest critical violation rates
+- **Regional Patterns**: Boroughs with highest critical violation counts
 
-### 3. Cuisine Analysis
-- **Grade Performance**: Grade distribution by cuisine type
-- **Score Analysis**: Cuisines with lowest average inspection scores
-- **Safety Patterns**: Cuisines with highest proportion of critical violations
+### 3. Cuisine Analysis 
+- **Grade**: Grade based on cuisine type
+- **Score Analysis**: Top 5 cuisines with lowest average inspection scores
+- **Safety Patterns**: Cuisines with highest critical violations
 
-## 🔍 Key Findings & Insights
+## 🔍 Key Findings & Insights 
 
 ### Top Research Questions Answered:
-1. **Which violations are most common, and where do they occur most frequently?**
-2. **Which cuisines and neighborhoods have the lowest food safety performance?**
-3. **How do restaurant grades and violations vary across boroughs and over time?**
-4. **Where should the city focus inspections, policies, or education to improve food safety?**
+1. **Which violations are most common, and where do they occur most frequently?** 2
+2. **Which cuisines and neighborhoods have the lowest food safety performance?** 3
+3. **How do restaurant grades and violations vary across boroughs and over time?** 3
+4. **Where should the city focus inspections, policies, or education to improve food safety?** 1
 
 ## 📈 Power BI Dashboard Features 
 
 The interactive Power BI dashboard (`Restaurant_Health_Inspection_Analysis_NYC.pbix`) includes:
 
-- 🗺️ **Geographic Visualizations**: Borough-wise performance maps
-- 📊 **Grade Distribution Charts**: Visual breakdown of restaurant grades
-- 🎯 **Violation Analysis**: Critical vs non-critical violation trends
+- 🗺️ **Geographic Visualizations**: Borough-wise maps
+- 📊 **Grade Distribution Charts**: Visual breakdown of restaurant grades based on Borough
+- 🎯 **Violation Analysis**: Critical vs non-critical violation 
 - 🍜 **Cuisine Performance**: Safety scores by cuisine type
-- 📅 **Time Series Analysis**: Trends over inspection periods
-- 🎛️ **Interactive Filters**: Borough, cuisine, grade, and date filters
+- 📅 **Time Series Analysis**: Trends over critical violations
+- 🎛️ **Interactive Filters**: Borough, cuisine, and date filters
 
-## 🚀 How to Use This Project
+## 🚀 How to Use This Project 
 
-### Prerequisites
-- SQL Server or compatible database system
+### Prerequisites 
+- SQL Server, MySQL or compatible database system
 - Power BI Desktop
 - Access to NYC restaurant inspection dataset
 
 ### Setup Instructions
-1. **Clone the repository**
-   ```bash
-   git clone [your-repository-url]
-   ```
+1. **Create a New Schema** 
+   - Create a News Schema in MySQL
 
-2. **Database Setup**
-   - Import the NYC restaurant inspection dataset into your SQL database
-   - Ensure the table is named `inspection_results`
+2. **Database Setup** 
+   - Import the NYC restaurant inspection results dataset into MySQL
+   - Make sure the table is named `inspection_results`
 
-3. **Run SQL Analysis**
+3. **Run SQL Analysis** 
    - Execute scripts in order: `01_data_preparation.sql` → `02_overall_insights.sql` → `03_violation_analysis.sql` → `04_cuisine_analysis.sql`
 
 4. **Power BI Dashboard**
@@ -117,28 +114,17 @@ The interactive Power BI dashboard (`Restaurant_Health_Inspection_Analysis_NYC.p
 
 Based on the analysis, the project provides actionable recommendations for:
 
-- **Targeted Inspections**: Focus areas with highest violation rates
-- **Public Health Campaigns**: Neighborhoods requiring additional food safety education
-- **Policy Development**: Evidence-based policy improvements
-- **Training Programs**: Cuisine-specific safety training initiatives
+-- **Target High-Risk Boroughs**: Allocate more inspection resources to boroughs showing the highest number of critical violations.
+-- **Strengthen Inspection Scheduling**: For boroughs with many re-inspections, implement targeted outreach to help establishments prepare before an inspection occurs.
+-- **Focus on the Top Violations**: Develop focused training and guidance materials specifically addressing the most common 10 violations.
+-- **Reduce Critical Violations**: Launch preventive programs targeting hygiene, food handling, and pest control—the most frequent critical violation categories.
+-- **Improve Scores for Low-Performing Cuisines**: Use the score analysis to create action plans for cuisines with the lowest average inspection scores.
+-- **Strengthen Collaboration with Cultural Associations**: Work with cuisine-specific restaurant associations (e.g., Latin, Asian, Middle Eastern groups) to share safety best practices.
 
-## 📧 Contact
+## 🎓 Project Credit 
 
-Feel free to reach out for questions, suggestions, or collaborations!
-
-## 🔗 Data Source
-
-NYC Open Data - Restaurant Inspection Results
-*Note: This project uses publicly available NYC Department of Health inspection data*
-
-## 🎓 Project Credit
-
-This project is based on the **Restaurant Health Inspection Analysis - NYC** project from [Analyst Builder](https://www.analystbuilder.com/projects/restaurant-health-inspection-analysis-nyc-FhAOm). The business requirements and dataset were provided by Analyst Builder, with analysis and visualization implementation completed independently.
+This project **Restaurant Health Inspection Analysis - NYC** dataset and requirements were provided by Analyst Builder ([https://www.analystbuilder.com/projects/restaurant-health-inspection-analysis-nyc-FhAOm](https://www.analystbuilder.com/projects/restaurant-health-inspection-analysis-nyc-FhAOm). The business requirements and dataset were provided by Analyst Builder, the analysis and visualization were implemented by myself with some guidance from GitHub repositories online.
 
 ---
-
-**Project Status**: ✅ Complete - Analysis & Visualization Ready
-
-*This project demonstrates end-to-end data analysis skills including data cleaning, SQL analysis, and business intelligence visualization using real-world public health data.*
 
 ![alt text](resources/image.png)
