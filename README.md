@@ -114,12 +114,12 @@ The interactive Power BI dashboard (`Restaurant_Health_Inspection_Analysis_NYC.p
 
 Based on the analysis, the project provides actionable recommendations for:
 
--- **Target High-Risk Boroughs**: Allocate more inspection resources to boroughs showing the highest number of critical violations.
--- **Strengthen Inspection Scheduling**: For boroughs with many re-inspections, implement targeted outreach to help establishments prepare before an inspection occurs.
--- **Focus on the Top Violations**: Develop focused training and guidance materials specifically addressing the most common 10 violations.
--- **Reduce Critical Violations**: Launch preventive programs targeting hygiene, food handling, and pest control—the most frequent critical violation categories.
--- **Improve Scores for Low-Performing Cuisines**: Use the score analysis to create action plans for cuisines with the lowest average inspection scores.
--- **Strengthen Collaboration with Cultural Associations**: Work with cuisine-specific restaurant associations (e.g., Latin, Asian, Middle Eastern groups) to share safety best practices.
+- **Target High-Risk Boroughs**: Allocate more inspection resources to boroughs showing the highest number of critical violations.
+- **Strengthen Inspection Scheduling**: For boroughs with many re-inspections, implement targeted outreach to help establishments prepare before an inspection occurs.
+- **Focus on the Top Violations**: Develop focused training and guidance materials specifically addressing the most common 10 violations.
+- **Reduce Critical Violations**: Launch preventive programs targeting hygiene, food handling, and pest control—the most frequent critical violation categories.
+- **Improve Scores for Low-Performing Cuisines**: Use the score analysis to create action plans for cuisines with the lowest average inspection scores.
+- **Strengthen Collaboration with Cultural Associations**: Work with cuisine-specific restaurant associations (e.g., Latin, Asian, Middle Eastern groups) to share safety best practices.
 
 ## 🎓 Project Credit 
 
