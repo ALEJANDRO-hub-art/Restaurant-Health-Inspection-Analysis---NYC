@@ -1,12 +1,12 @@
-# NYC Restaurant Health Inspection Analysis -NYC 
+# 📊 NYC Restaurant Health Inspection Analysis -NYC 
 
 A detailed analytical study of New York City restaurant health inspection data, focused on uncovering trends in violations, grading outcomes, and food safety performance across different cuisines.
 
-## Project Overview 
+## 📘 Project Overview 
 
 This project examines restaurant inspection data from the NYC Department of Health to generate actionable insights for enhancing public health policies, optimizing inspection schedules, and guiding food safety education initiatives. The analysis enables city leaders to identify high-risk neighborhoods, understand which types of restaurants face the greatest food safety challenges, and pinpoint the most frequent violations.
 
-## Business Problem 
+## 🎯 Business Problem 
 
 The NYC Department of Health requires data-driven insights to:
 - Detect trends in restaurant violations and inspection grades
@@ -14,7 +14,7 @@ The NYC Department of Health requires data-driven insights to:
 - Guide targeted inspections, policy decisions, and educational initiatives to enhance food safety
 - Monitor variations in restaurant grades and violations across boroughs and over time
 
-## Tech Stack 
+## 🛠 Tech Stack 
 
 - **SQL Server** - Data cleaning, transformation, and analysis
 - **Power BI** - Develop interactive dashboards and create insightful visualizations
