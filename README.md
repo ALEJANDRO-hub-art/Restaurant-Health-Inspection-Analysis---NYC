@@ -127,5 +127,6 @@ This project **Restaurant Health Inspection Analysis - NYC** dataset and require
 
 ---
 
-<img width="905" height="511" alt="image" src="https://github.com/user-attachments/assets/53dcce00-df7d-44ef-8d8f-fb5b6e684520" />
+<img width="905" height="508" alt="image" src="https://github.com/user-attachments/assets/be3a2d83-9e1e-43d3-875d-f83a8999d943" />
+
 
